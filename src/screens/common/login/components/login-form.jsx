@@ -44,11 +44,12 @@ const LoginForm = () => {
 
     async function onSubmit(data) {
         try {
-            const response = API.loginUser({
+            const response = await API.loginUser({
                 contact: data.contact,
                 password: data.password,
             });
             const { token, user } = response.data;
+            console.log("Login response:", response);
 
             // Save JWT to localStorage
             localStorage.setItem("token", token);
