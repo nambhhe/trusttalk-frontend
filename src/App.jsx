@@ -97,7 +97,7 @@ function Layout() {
 function App() {
     return (
         <AuthProvider>
-            <Router basename="/trusttalk-frontend">
+            <Router>
                 <Layout />
             </Router>
         </AuthProvider>
