@@ -1,9 +1,9 @@
 import axios from "axios";
 
-// const PORT = import.meta.env.VITE_PORT;
+const PORT = import.meta.env.VITE_PORT;
 
 // Centralized Base URL
-const API_BASE_URL = `https://trusttalk-api.onrender.com`; // Change here to update for all APIs
+const API_BASE_URL = `http://localhost:${PORT}`; // Change here to update for all APIs
 
 // Create Axios Instance
 const apiClient = axios.create({
