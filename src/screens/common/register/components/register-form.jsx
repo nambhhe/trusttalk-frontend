@@ -56,7 +56,7 @@ const RegisterForm = () => {
 
     const onSubmit = async (data) => {
         try {
-            API.registerUser({
+            await API.registerUser({
                 contact: data.contact,
                 name: data.name,
                 password: data.password,
